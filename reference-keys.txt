@@ -1,0 +1,15 @@
+fig:nice-fig
+tab:nice-tab
+urban-analytics
+example1
+industrial
+organise-the-base-data
+compile-the-results-in-r
+the-benefits
+rshiny
+shiny-example
+benefits
+esridash
+summarise-expected-versus-actual-growth
+summarise-dwelling-types
+GMReport
