@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>5 Compare planning forecasts | Chris Crowley</title>
+  <title>4 Compare planning forecasts | Chris Crowley</title>
   <meta name="description" content="Here are some interesting work examples." />
   <meta name="generator" content="bookdown 0.27 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="5 Compare planning forecasts | Chris Crowley" />
+  <meta property="og:title" content="4 Compare planning forecasts | Chris Crowley" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="Here are some interesting work examples." />
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="5 Compare planning forecasts | Chris Crowley" />
+  <meta name="twitter:title" content="4 Compare planning forecasts | Chris Crowley" />
   
   <meta name="twitter:description" content="Here are some interesting work examples." />
   
@@ -30,7 +30,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="the-benefits.html"/>
+<link rel="prev" href="industrial.html"/>
 <link rel="next" href="esridash.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -164,19 +164,19 @@ div.csl-indent {
 <ul>
 <li class="chapter" data-level="3.1" data-path="industrial.html"><a href="industrial.html#organise-the-base-data"><i class="fa fa-check"></i><b>3.1</b> Organise the base data</a></li>
 <li class="chapter" data-level="3.2" data-path="industrial.html"><a href="industrial.html#compile-the-results-in-r"><i class="fa fa-check"></i><b>3.2</b> Compile the results in R</a></li>
+<li class="chapter" data-level="3.3" data-path="industrial.html"><a href="industrial.html#the-benefits"><i class="fa fa-check"></i><b>3.3</b> The benefits</a></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="the-benefits.html"><a href="the-benefits.html"><i class="fa fa-check"></i><b>4</b> The benefits</a></li>
-<li class="chapter" data-level="5" data-path="rshiny.html"><a href="rshiny.html"><i class="fa fa-check"></i><b>5</b> Compare planning forecasts</a>
+<li class="chapter" data-level="4" data-path="rshiny.html"><a href="rshiny.html"><i class="fa fa-check"></i><b>4</b> Compare planning forecasts</a>
 <ul>
-<li class="chapter" data-level="5.1" data-path="rshiny.html"><a href="rshiny.html#shiny-example"><i class="fa fa-check"></i><b>5.1</b> Shiny example</a></li>
-<li class="chapter" data-level="5.2" data-path="rshiny.html"><a href="rshiny.html#benefits"><i class="fa fa-check"></i><b>5.2</b> Benefits</a></li>
+<li class="chapter" data-level="4.1" data-path="rshiny.html"><a href="rshiny.html#shiny-example"><i class="fa fa-check"></i><b>4.1</b> Shiny example</a></li>
+<li class="chapter" data-level="4.2" data-path="rshiny.html"><a href="rshiny.html#benefits"><i class="fa fa-check"></i><b>4.2</b> Benefits</a></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="esridash.html"><a href="esridash.html"><i class="fa fa-check"></i><b>6</b> Development activity Dashboard</a>
+<li class="chapter" data-level="5" data-path="esridash.html"><a href="esridash.html"><i class="fa fa-check"></i><b>5</b> Development activity Dashboard</a>
 <ul>
-<li class="chapter" data-level="6.1" data-path="esridash.html"><a href="esridash.html#summarise-expected-versus-actual-growth"><i class="fa fa-check"></i><b>6.1</b> Summarise expected versus actual growth</a></li>
-<li class="chapter" data-level="6.2" data-path="esridash.html"><a href="esridash.html#summarise-dwelling-types"><i class="fa fa-check"></i><b>6.2</b> Summarise dwelling types</a></li>
+<li class="chapter" data-level="5.1" data-path="esridash.html"><a href="esridash.html#summarise-expected-versus-actual-growth"><i class="fa fa-check"></i><b>5.1</b> Summarise expected versus actual growth</a></li>
+<li class="chapter" data-level="5.2" data-path="esridash.html"><a href="esridash.html#summarise-dwelling-types"><i class="fa fa-check"></i><b>5.2</b> Summarise dwelling types</a></li>
 </ul></li>
-<li class="chapter" data-level="7" data-path="GMReport.html"><a href="GMReport.html"><i class="fa fa-check"></i><b>7</b> Growth Monitoring Reporting</a></li>
+<li class="chapter" data-level="6" data-path="GMReport.html"><a href="GMReport.html"><i class="fa fa-check"></i><b>6</b> Growth Monitoring Reporting</a></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -198,18 +198,22 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="rshiny" class="section level1 hasAnchor" number="5">
-<h1><span class="header-section-number">5</span> Compare planning forecasts<a href="rshiny.html#rshiny" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="rshiny" class="section level1 hasAnchor" number="4">
+<h1><span class="header-section-number">4</span> Compare planning forecasts<a href="rshiny.html#rshiny" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>Sometimes its necessary to compare your growth forecasts to others.</p>
 <p>You want a way to do it for different types of forecast, different geographical areas and timeframes.</p>
-<div id="shiny-example" class="section level2 hasAnchor" number="5.1">
-<h2><span class="header-section-number">5.1</span> Shiny example<a href="rshiny.html#shiny-example" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="shiny-example" class="section level2 hasAnchor" number="4.1">
+<h2><span class="header-section-number">4.1</span> Shiny example<a href="rshiny.html#shiny-example" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p><a href="https://shiny.rstudio.com/"><strong>Shiny</strong></a> based on <strong>R</strong> lets you quickly build attractive dashboards.</p>
 <p>Here’s an example of a dashboard that dynamically compares my employer’s growth forecasts to others by the local utility provider, the State Government and so on.</p>
+<div class="figure">
+<img src="images/Picture6.png" alt="" />
+<p class="caption">Screenshot - Shiny dashboard</p>
+</div>
 <p>The drop downs let me pick an area, whether the whole council area or a part of it, to explore. I can choose to compare dwellings, population or employment forecasts.</p>
 </div>
-<div id="benefits" class="section level2 hasAnchor" number="5.2">
-<h2><span class="header-section-number">5.2</span> Benefits<a href="rshiny.html#benefits" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="benefits" class="section level2 hasAnchor" number="4.2">
+<h2><span class="header-section-number">4.2</span> Benefits<a href="rshiny.html#benefits" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>This is an example of how complex questions can be answered very simply and repeatably. In land use monitoring, it’s common for queries to come in that are about comparing one set of numbers to another and seeking the differences. This is an example of using <strong>R Shiny</strong> to answer them instantly and 100% correctly each time.</p>
 
 </div>
@@ -219,7 +223,7 @@ div.csl-indent {
           </div>
         </div>
       </div>
-<a href="the-benefits.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="industrial.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 <a href="esridash.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>

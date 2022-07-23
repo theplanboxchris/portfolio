@@ -31,7 +31,7 @@
   
   
 <link rel="prev" href="example1.html"/>
-<link rel="next" href="the-benefits.html"/>
+<link rel="next" href="rshiny.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -164,19 +164,19 @@ div.csl-indent {
 <ul>
 <li class="chapter" data-level="3.1" data-path="industrial.html"><a href="industrial.html#organise-the-base-data"><i class="fa fa-check"></i><b>3.1</b> Organise the base data</a></li>
 <li class="chapter" data-level="3.2" data-path="industrial.html"><a href="industrial.html#compile-the-results-in-r"><i class="fa fa-check"></i><b>3.2</b> Compile the results in R</a></li>
+<li class="chapter" data-level="3.3" data-path="industrial.html"><a href="industrial.html#the-benefits"><i class="fa fa-check"></i><b>3.3</b> The benefits</a></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="the-benefits.html"><a href="the-benefits.html"><i class="fa fa-check"></i><b>4</b> The benefits</a></li>
-<li class="chapter" data-level="5" data-path="rshiny.html"><a href="rshiny.html"><i class="fa fa-check"></i><b>5</b> Compare planning forecasts</a>
+<li class="chapter" data-level="4" data-path="rshiny.html"><a href="rshiny.html"><i class="fa fa-check"></i><b>4</b> Compare planning forecasts</a>
 <ul>
-<li class="chapter" data-level="5.1" data-path="rshiny.html"><a href="rshiny.html#shiny-example"><i class="fa fa-check"></i><b>5.1</b> Shiny example</a></li>
-<li class="chapter" data-level="5.2" data-path="rshiny.html"><a href="rshiny.html#benefits"><i class="fa fa-check"></i><b>5.2</b> Benefits</a></li>
+<li class="chapter" data-level="4.1" data-path="rshiny.html"><a href="rshiny.html#shiny-example"><i class="fa fa-check"></i><b>4.1</b> Shiny example</a></li>
+<li class="chapter" data-level="4.2" data-path="rshiny.html"><a href="rshiny.html#benefits"><i class="fa fa-check"></i><b>4.2</b> Benefits</a></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="esridash.html"><a href="esridash.html"><i class="fa fa-check"></i><b>6</b> Development activity Dashboard</a>
+<li class="chapter" data-level="5" data-path="esridash.html"><a href="esridash.html"><i class="fa fa-check"></i><b>5</b> Development activity Dashboard</a>
 <ul>
-<li class="chapter" data-level="6.1" data-path="esridash.html"><a href="esridash.html#summarise-expected-versus-actual-growth"><i class="fa fa-check"></i><b>6.1</b> Summarise expected versus actual growth</a></li>
-<li class="chapter" data-level="6.2" data-path="esridash.html"><a href="esridash.html#summarise-dwelling-types"><i class="fa fa-check"></i><b>6.2</b> Summarise dwelling types</a></li>
+<li class="chapter" data-level="5.1" data-path="esridash.html"><a href="esridash.html#summarise-expected-versus-actual-growth"><i class="fa fa-check"></i><b>5.1</b> Summarise expected versus actual growth</a></li>
+<li class="chapter" data-level="5.2" data-path="esridash.html"><a href="esridash.html#summarise-dwelling-types"><i class="fa fa-check"></i><b>5.2</b> Summarise dwelling types</a></li>
 </ul></li>
-<li class="chapter" data-level="7" data-path="GMReport.html"><a href="GMReport.html"><i class="fa fa-check"></i><b>7</b> Growth Monitoring Reporting</a></li>
+<li class="chapter" data-level="6" data-path="GMReport.html"><a href="GMReport.html"><i class="fa fa-check"></i><b>6</b> Growth Monitoring Reporting</a></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -210,9 +210,22 @@ div.csl-indent {
 </div>
 <div id="compile-the-results-in-r" class="section level2 hasAnchor" number="3.2">
 <h2><span class="header-section-number">3.2</span> Compile the results in R<a href="industrial.html#compile-the-results-in-r" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>The most basic compilation of results is a simple table, <strong>compiled using R</strong>, summing the areas of V,U and T for each of the main industrial areas.</p>
-<p>I have taken this a lot further using <a href="https://bookdown.org/yihui/rmarkdown/"><strong>RMarkDown</strong></a> to compile detailed reports.</p>
-<p>In fact, so much information can be pulled from such a simple GIS layer that a 100 page report is easy to fill. Because its scripted, I can update the GIS and re-run the reporting automatically to produce very rich, detailed project reporting.</p>
+<p>The most basic compilation of results is a simple table summing the areas of V,U and T for each of the main industrial areas.</p>
+<p>However, <strong>compiled with R</strong>, lets you go a lot further using <a href="https://bookdown.org/yihui/rmarkdown/"><strong>RMarkDown</strong></a> to compile detailed reports.</p>
+<p>In fact, so much information can be pulled from such a simple GIS layer that a 100 page report is easy to fill.</p>
+<div class="figure">
+<img src="images/Picture7.png" alt="" />
+<p class="caption">Screenshot - VUT by area</p>
+</div>
+<p>Whats interesting about this image is that its a web page.</p>
+<p>The same code can generate a web page (sample above) OR an <strong>MS Word document</strong> (or other formats) meaning a website or a professional report is generated using the same code and, because its scripted, the original GIS data can be updated anytime and simply rerun the reporting script to have the changes immediately reflected.</p>
+</div>
+<div id="the-benefits" class="section level2 hasAnchor" number="3.3">
+<h2><span class="header-section-number">3.3</span> The benefits<a href="industrial.html#the-benefits" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Some councils will always prefer to spend a lot of time and money on consultancies to answer their land supply questions, because having an answer that cost a lot of money to get is seen as somehow more persuasive.</p>
+<p>But its essentially a simple question: add up the amount of land that is classified as vacant, underutilised, or taken. And that is easy using GIS and R.</p>
+<p>This process now takes my current team about a day - reusing a few simple scripts each time we do it.</p>
+
 </div>
 </div>
             </section>
@@ -221,7 +234,7 @@ div.csl-indent {
         </div>
       </div>
 <a href="example1.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="the-benefits.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="rshiny.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
